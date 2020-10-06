@@ -3,6 +3,7 @@ package com.example.tableviewintent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+        startActivity(intent);
 
     }
 
